@@ -9,7 +9,6 @@ This code had been wrote to execute contents below.
 + output HTML texts as Excel
 """
 
-from pandas.core.indexes.base import Index
 import requests
 from bs4 import BeautifulSoup as BS
 import pandas as pd
@@ -26,8 +25,7 @@ def Scraping(url, parser):
 #Create File Path
 def FilePath(direct_name, file_type):
     dt_now = datetime.datetime.now()
-    file_time = str(dt_now.month) + str(dt_now.day) + \
-        str(dt_now.hour) + str(dt_now.minute)
+    file_time = dt_now.strftime("%m%d%H%M")
     return direct_name + "nakamura_rain_" + file_time + file_type
 
 #Split and Output

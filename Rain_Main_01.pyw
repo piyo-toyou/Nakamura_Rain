@@ -1,4 +1,4 @@
-import Scraping_23 as sc
+import Scraping_24 as sc
 import Rain_Management_12 as rm
 import send_mail_02 as sm
 
